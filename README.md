@@ -51,4 +51,4 @@ You can visit the dashboard [here](https://public.tableau.com/app/profile/moinul
    time.sleep(your desired time)
    ```
 6. The data will be stored in a csv file named 'Active Candidate Masters.csv'. Change the name at your wish.
-7. You can concatenate the csv files into a single csv file using jupyter notebook as I did [here](https://github.com/moinul-hossain-dhrubo/FIDE_Ratings_Analysis/blob/main/data_process.ipynb) . <br/>
+7. You can concatenate the csv files into a single csv file using jupyter notebook as I did [here](https://github.com/moinul-hossain-dhrubo/FIDE_Ratings_Analysis/blob/main/Web_scraping_FIDE/data_process.ipynb) . <br/>
