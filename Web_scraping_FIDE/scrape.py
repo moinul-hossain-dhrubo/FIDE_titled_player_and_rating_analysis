@@ -21,28 +21,21 @@ def main():
     advanced_search_button = driver.find_element(By.ID, "advanced_search")
     advanced_search_button.click()
 
-    # master_select = WebDriverWait(driver, 10).until(
-    # EC.element_to_be_clickable((By.ID, 'select_title')))
+    time.sleep(20) #Interact with the website by this time
 
-    # master_select.click()
-
-    time.sleep(20)
-
-
-
-
-    fifty_more_button = WebDriverWait(driver, 10).until(
+    #Clicking on search button
+    search_button = WebDriverWait(driver, 10).until(
     EC.element_to_be_clickable((By.ID, 'search2')))
 
-    fifty_more_button.click()
+    search_button.click()
 
     time.sleep(5)
 
-# Defining the number of times you want to click the "More" button
+    # Defining the number of times you want to click the "50 More" button
     num_clicks = 1391//50  # You can adjust this number based on your requirements
 
     for _ in range(num_clicks): 
-        # Click on the "More" button
+        # Click on the " 50 More" button
         more_button = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.ID, 'more')))
         more_button.click()
@@ -75,13 +68,11 @@ def main():
         # Append the dictionary to the data list
         data.append(result_dict)
 
-        # Print the dictionary for the current row
+        # Print the dictionary for the current row (uncomment if needed)
         # print(result_dict)
 
     # Create a Pandas DataFrame from the list of dictionaries
     df = pd.DataFrame(data)
-
-    # df.to_csv('Male active International Masters', index = False)
 
     # Replace the first name in the DataFrame
     df.at[0, 'Name'] = 'Aaditya Dhingra'
@@ -89,15 +80,11 @@ def main():
     # Drop the 'NaN' column
     df = df.drop('NaN', axis=1)
 
-    # Print the DataFrame
-    # print(df)
 
     df.to_csv('Active Candidate Masters.csv', index = False)
 
-    
 
-
-    # time.sleep(25)
+    # time.sleep(5)
     # driver.close()
 
     return
