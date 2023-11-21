@@ -9,7 +9,8 @@ After that, Tableau, an excellent visualization tool/software, was utilized to a
 1. Countries with most GM,IM and CM
 2. Age distribution of the players along with the countries
 3. Emerging Players
-4. Profiles of the Candidates tournament qualifiers etc.
+4. Linear combination of the ratings
+5. Profiles of the Candidates tournament qualifiers etc.
 
 You can visit the dashboard [here](https://public.tableau.com/app/profile/moinul.hossain.dhrubo/viz/FIDEratingsAnalysis/Agedistribution) . <br/>
 
