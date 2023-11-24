@@ -28,6 +28,7 @@ You can visit the dashboard [here](https://public.tableau.com/app/profile/moinul
    ```bash
    pip install -r requirements.txt
    ```
+4. Download Chromedriver from [here](https://chromedriver.chromium.org/downloads) <br/>
 4. Apply filter regarding your need and then see how many results are found.
 5. Update num_clicks, range of row_index according to the number of results found.
    ```bash
