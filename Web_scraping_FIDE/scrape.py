@@ -6,6 +6,10 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import pandas as pd
 
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument('--chromedriver_path', type = str, help = "Check the chromedriver path in your local machine")
+arg = parser.parse_args()
 
 ###Columns to Scrape
 columns = ['Name', 'Title','NaN', 'Country', 'Standard Rating', 'Rapid Rating', 'Blitz Rating', 'Birth Year']
@@ -14,8 +18,8 @@ columns = ['Name', 'Title','NaN', 'Country', 'Standard Rating', 'Rapid Rating', 
 
 def main():
     url = "https://ratings.fide.com/"
-    chrome_driver_path = r'G:\Downloads_new\chromedriver-win64\chromedriver.exe'
-    driver = webdriver.Chrome(executable_path=chrome_driver_path)
+    webdriver_path = parser.chromedriver_path
+    driver = webdriver.Chrome(executable_path=webdriver_path)
     driver.get(url)
 
     # Click on the "Advanced Search" button
