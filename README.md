@@ -45,7 +45,7 @@ You can visit the dashboard [here](https://public.tableau.com/app/profile/moinul
    ```
 4. Run the Scraper
    ```bash
-   python scrape.py
+   python Web_scraping_FIDE/scrape.py --chromedriver_path <path_to_chromedriver>
    ```
 5. Within 20 seconds,Interact with the website to filter them similarly after the browser opens.
    You can change the time by updating
