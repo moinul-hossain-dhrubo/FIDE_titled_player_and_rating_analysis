@@ -14,7 +14,8 @@ columns = ['Name', 'Title','NaN', 'Country', 'Standard Rating', 'Rapid Rating', 
 
 def main():
     url = "https://ratings.fide.com/"
-    driver = webdriver.Chrome()
+    chrome_driver_path = r'G:\Downloads_new\chromedriver-win64\chromedriver.exe'
+    driver = webdriver.Chrome(executable_path=chrome_driver_path)
     driver.get(url)
 
     # Click on the "Advanced Search" button
