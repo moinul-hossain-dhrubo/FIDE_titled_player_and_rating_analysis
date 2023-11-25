@@ -18,7 +18,7 @@ columns = ['Name', 'Title','NaN', 'Country', 'Standard Rating', 'Rapid Rating', 
 
 def main():
     url = "https://ratings.fide.com/"
-    webdriver_path = parser.chromedriver_path
+    webdriver_path = arg.chromedriver_path
     driver = webdriver.Chrome(executable_path=webdriver_path)
     driver.get(url)
 
