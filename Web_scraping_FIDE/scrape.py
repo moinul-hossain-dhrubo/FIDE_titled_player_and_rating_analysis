@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.service import Service
 import time
 import pandas as pd
 
@@ -19,7 +20,8 @@ columns = ['Name', 'Title','NaN', 'Country', 'Standard Rating', 'Rapid Rating', 
 def main():
     url = "https://ratings.fide.com/"
     webdriver_path = arg.chromedriver_path
-    driver = webdriver.Chrome(executable_path=webdriver_path)
+    service = Service(webdriver_path)
+    driver = webdriver.Chrome(service=service)
     driver.get(url)
 
     # Click on the "Advanced Search" button
@@ -60,9 +62,9 @@ def main():
     # List to store dictionaries for each row
     data = []
 
-    for row_index in range(1, 1392):
+    for row_index in range(1, 10):
         row_values = []
-        for col_index in range(1, 9):  # Assuming there are 5 columns (adjust the range accordingly)
+        for col_index in range(1, 9):  # As there are 8 columns (adjust the range accordingly)
             # Use f-string to dynamically insert row_index and col_index into the XPath
             td_element = driver.find_element(By.XPATH, f"(//tr[{row_index}]/td[{col_index}])")
             row_values.append(td_element.text)
