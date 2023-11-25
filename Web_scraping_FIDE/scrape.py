@@ -62,7 +62,7 @@ def main():
     # List to store dictionaries for each row
     data = []
 
-    for row_index in range(1, 10):
+    for row_index in range(1, 1392):
         row_values = []
         for col_index in range(1, 9):  # As there are 8 columns (adjust the range accordingly)
             # Use f-string to dynamically insert row_index and col_index into the XPath
