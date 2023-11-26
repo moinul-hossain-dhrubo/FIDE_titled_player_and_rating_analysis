@@ -1,9 +1,9 @@
 # FIDE_Ratings_Analysis
 
 ### Problem Statement:
-The objective of this project was to compile information on Grandmasters, International Masters, and Candidate Masters who presently hold ratings with FIDE and also actively compete in tournaments. To do that we needed information from [this website](https://ratings.fide.com/) . <br/>
+The objective of this project was to compile information on Grandmasters, International Masters, and Candidate Masters who presently hold ratings with FIDE and also actively compete in tournaments. To do that we needed information from [this website](https://ratings.fide.com/) . <br/> We collected the data using selenium library. You can find the code [here](https://github.com/moinul-hossain-dhrubo/FIDE_Ratings_Analysis/blob/main/web_scraping_FIDE/scrape.py)
 
-After the data was processed, we ended up with 4996 records and 9 columns containing the following information: Name, Title, Country, Standard rating, Rapid rating, and Blitz rating; also we had their Age and Birth Year.
+After collecting and processing the data, we ended up with 4996 records and 9 columns containing the following information: Name, Title, Country, Standard rating, Rapid rating, and Blitz rating; also we had their Age and Birth Year.
 After that, Tableau, an excellent visualization tool/software, was utilized to analyze the data and extract useful information. We built three dashborads using the plots mentioned below:
 
 1. Countries with most GM,IM and CM - Country map
