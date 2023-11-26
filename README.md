@@ -4,13 +4,22 @@
 The objective of this project was to compile information on Grandmasters, International Masters, and Candidate Masters who presently hold ratings with FIDE and also actively compete in tournaments. To do that we needed information from [this website](https://ratings.fide.com/) . <br/>
 
 After the data was processed, we ended up with 4996 records and 9 columns containing the following information: Name, Title, Country, Standard rating, Rapid rating, and Blitz rating; also we had their Age and Birth Year.
-After that, Tableau, an excellent visualization tool/software, was utilized to analyze the data and extract useful information. Among our findings we would like to share are:
+After that, Tableau, an excellent visualization tool/software, was utilized to analyze the data and extract useful information. We built three dashborads using the plots mentioned below:
 
-1. Countries with most GM,IM and CM
-2. Age distribution of the players along with the countries
-3. Emerging Players
-4. Linear combination of the ratings
+1. Countries with most GM,IM and CM - Country map
+2. Age distribution of the players along with the countries - Histogram
+3. Emerging Players - Bar plot
+4. Linear combination of the ratings - Scatter plot
 5. Profiles of the Candidates tournament qualifiers etc.
+
+Some interesting findings are :
+1. Europe continent has most of the titled players
+2. Players have linear correlation beteen standard, rapid and blitz rating meaning that a player who has higher rating in standard time format will most likely have higher rating in
+   rapid and blitz section. Note that, standard, rapid and blitz are three different time formats.
+3. India has the most players in the younger age bins whereas most German players are in older age group.
+4. Some players who were born before 1940 are still playing and have not become a GM or IM yet whereas players born after 2000 have already become Grandmasters.
+5. Only one player amongst the youngstars is a Grandmaster.
+6. Though Germany has the highest titled players, Russia still holds the record of having the most Grandmasters.
 
 You can visit the dashboard [here](https://public.tableau.com/app/profile/moinul.hossain.dhrubo/viz/FIDEratingsAnalysis/Agedistribution) . <br/>
 
