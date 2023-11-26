@@ -88,7 +88,7 @@ def main():
     df = df.drop('NaN', axis=1)
 
 
-    df.to_csv('Active Candidate Masters.csv', index = False)
+    df.to_csv('active_candidate_masters.csv', index = False)
 
 
     # time.sleep(5)
