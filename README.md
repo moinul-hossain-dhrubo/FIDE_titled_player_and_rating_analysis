@@ -14,11 +14,12 @@ After that, Tableau, an excellent visualization tool/software, was utilized to a
 
 Some interesting findings are :
 1. The majority of the titled players are found in Europe.
-2. There is a linear correlation between a player's standard, rapid, and blitz ratings; this means that a player with a higher standard time format rating is likely to have a higher rapid and blitz rating as well. Keep in mind that there are three different time formats: standard, rapid and blitz.
-3. The majority of German players are in the older age group, whereas the majority of Indian players are in the lower age bracket.
-4. While players born after 2000 have already attained Grandmaster title, several players born before 1940 are still active and have not yet attained the status of GM or IM.
-5. Of the young stars, only one player is a Grandmaster.
-6. Russia still holds the record of having the most Grandmasters, despite the fact that Germany has the most titled players.
+   ![player_count_by_country](https://github.com/moinul-hossain-dhrubo/FIDE_Ratings_Analysis/assets/122023969/b5da80bc-e9ee-4701-ba16-62dee0443968)
+3. There is a linear correlation between a player's standard, rapid, and blitz ratings; this means that a player with a higher standard time format rating is likely to have a higher rapid and blitz rating as well. Keep in mind that there are three different time formats: standard, rapid and blitz.
+4. The majority of German players are in the older age group, whereas the majority of Indian players are in the lower age bracket.
+5. While players born after 2000 have already attained Grandmaster title, several players born before 1940 are still active and have not yet attained the status of GM or IM.
+6. Of the young stars, only one player is a Grandmaster.
+7. Russia still holds the record of having the most Grandmasters, despite the fact that Germany has the most titled players.
 
 You can visit the dashboard [here](https://public.tableau.com/app/profile/moinul.hossain.dhrubo/viz/FIDEratingsAnalysis/Agedistribution) . <br/>
 
