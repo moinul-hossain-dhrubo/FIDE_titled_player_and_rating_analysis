@@ -14,7 +14,7 @@ After that, Tableau, an excellent visualization tool/software, was utilized to a
 
 Some interesting findings are :
 1. The majority of the titled players are found in Europe.
-   ![player_count_by_country](https://github.com/moinul-hossain-dhrubo/FIDE_Ratings_Analysis/assets/122023969/b5da80bc-e9ee-4701-ba16-62dee0443968)
+   ![player_count_by_country](https://github.com/moinul-hossain-dhrubo/FIDE_Ratings_Analysis/assets/122023969/93bd445d-e1bb-44fa-80d8-58e9212e0e52)
 3. There is a linear correlation between a player's standard, rapid, and blitz ratings; this means that a player with a higher standard time format rating is likely to have a higher rapid and blitz rating as well. Keep in mind that there are three different time formats: standard, rapid and blitz.
 4. The majority of German players are in the older age group, whereas the majority of Indian players are in the lower age bracket.
 5. While players born after 2000 have already attained Grandmaster title, several players born before 1940 are still active and have not yet attained the status of GM or IM.
