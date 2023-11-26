@@ -10,16 +10,21 @@ After that, Tableau, an excellent visualization tool/software, was utilized to a
 2. Age distribution of the players along with the countries - Histogram
 3. Emerging Players - Bar plot
 4. Linear combination of the ratings - Scatter plot
-5. Profiles of the Candidates tournament qualifiers etc.
+5. Profiles of the Candidates tournament qualifiers etc. Note that, only the winner of this tournament will face the reigning world champion in the world championship matches.
 
 Some interesting findings are :
 1. The majority of the titled players are found in Europe.
    ![player_count_by_country](https://github.com/moinul-hossain-dhrubo/FIDE_Ratings_Analysis/assets/122023969/93bd445d-e1bb-44fa-80d8-58e9212e0e52)
 3. There is a linear correlation between a player's standard, rapid, and blitz ratings; this means that a player with a higher standard time format rating is likely to have a higher rapid and blitz rating as well. Keep in mind that there are three different time formats: standard, rapid and blitz.
-4. The majority of German players are in the older age group, whereas the majority of Indian players are in the lower age bracket.
-5. While players born after 2000 have already attained Grandmaster title, several players born before 1940 are still active and have not yet attained the status of GM or IM.
-6. Of the young stars, only one player is a Grandmaster.
-7. Russia still holds the record of having the most Grandmasters, despite the fact that Germany has the most titled players.
+   ![linear_correlation_of_ratings](https://github.com/moinul-hossain-dhrubo/FIDE_Ratings_Analysis/assets/122023969/0b901a08-77cc-44f7-93d6-e8b97943cfb7)
+5. The majority of German players are in the older age group, whereas the majority of Indian players are in the lower age bracket. The Spanish players are distributed fairly throughout the 20–60 age range.
+   ![age_distribution](https://github.com/moinul-hossain-dhrubo/FIDE_Ratings_Analysis/assets/122023969/79ecba7e-5812-4bf8-85df-b3d7066b6f7f)
+7. While players born after 2000 have already attained Grandmaster title, several players born before 1940 are still active and have not yet attained the status of GM or IM.
+   ![birth_year](https://github.com/moinul-hossain-dhrubo/FIDE_Ratings_Analysis/assets/122023969/1fa18c25-bae2-4c63-bb3c-d20c5e3fd6ec)
+9. Of the young stars, only one player is a Grandmaster.
+    ![Mishra age](https://github.com/moinul-hossain-dhrubo/FIDE_Ratings_Analysis/assets/122023969/d214f6c5-7a5e-4b0a-81b5-47d2eecdcb0a)
+11. Russia still holds the record of having the most Grandmasters, despite the fact that Germany has the most titled players and International masters. Additionally, Spain has the most Candidate masters.
+    ![title_count_by_countries_marked](https://github.com/moinul-hossain-dhrubo/FIDE_Ratings_Analysis/assets/122023969/8a9a54f7-9bd2-4b5b-9617-9adb566ebddb)
 
 You can visit the dashboard [here](https://public.tableau.com/app/profile/moinul.hossain.dhrubo/viz/FIDEratingsAnalysis/Agedistribution) . <br/>
 
