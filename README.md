@@ -14,19 +14,30 @@ After that, Tableau, an excellent visualization tool/software, was utilized to a
 
 Some interesting findings are :
 1. The majority of the titled players are found in Europe.
+   
    ![player_count_by_country](https://github.com/moinul-hossain-dhrubo/FIDE_Ratings_Analysis/assets/122023969/93bd445d-e1bb-44fa-80d8-58e9212e0e52)
-3. There is a linear correlation between a player's standard, rapid, and blitz ratings; this means that a player with a higher standard time format rating is likely to have a higher rapid and blitz rating as well. Keep in mind that there are three different time formats: standard, rapid and blitz.
+   
+2. There is a linear correlation between a player's standard, rapid, and blitz ratings; this means that a player with a higher standard time format rating is likely to have a higher rapid and blitz rating as well. Keep in mind that there are three different time formats: standard(longest time format), rapid(faster than standard) and blitz(fastest). [know more about time formats](https://chessarmory.com/blogs/chess-blog/time-controls-in-tournament-chess)
+   
    ![linear_correlation_of_ratings](https://github.com/moinul-hossain-dhrubo/FIDE_Ratings_Analysis/assets/122023969/0b901a08-77cc-44f7-93d6-e8b97943cfb7)
+   
 5. The majority of German players are in the older age group, whereas the majority of Indian players are in the lower age bracket. The Spanish players are distributed fairly throughout the 20–60 age range.
+   
    ![age_distribution](https://github.com/moinul-hossain-dhrubo/FIDE_Ratings_Analysis/assets/122023969/79ecba7e-5812-4bf8-85df-b3d7066b6f7f)
+   
 7. While players born after 2000 have already attained Grandmaster title, several players born before 1940 are still active and have not yet attained the status of GM or IM.
+   
    ![birth_year](https://github.com/moinul-hossain-dhrubo/FIDE_Ratings_Analysis/assets/122023969/1fa18c25-bae2-4c63-bb3c-d20c5e3fd6ec)
+   
 9. Of the young stars, only one player is a Grandmaster.
+    
     ![Mishra age](https://github.com/moinul-hossain-dhrubo/FIDE_Ratings_Analysis/assets/122023969/d214f6c5-7a5e-4b0a-81b5-47d2eecdcb0a)
+   
 11. Russia still holds the record of having the most Grandmasters, despite the fact that Germany has the most titled players and International masters. Additionally, Spain has the most Candidate masters.
+    
     ![title_count_by_countries_marked](https://github.com/moinul-hossain-dhrubo/FIDE_Ratings_Analysis/assets/122023969/8a9a54f7-9bd2-4b5b-9617-9adb566ebddb)
 
-You can visit the dashboard [here](https://public.tableau.com/app/profile/moinul.hossain.dhrubo/viz/FIDEratingsAnalysis/Agedistribution) . <br/>
+### **You can visit the dashboard [here](https://public.tableau.com/app/profile/moinul.hossain.dhrubo/viz/FIDEratingsAnalysis/Agedistribution) . <br/>**
 
 ### Build from sources :
 1. Clone the repo
@@ -38,11 +49,16 @@ You can visit the dashboard [here](https://public.tableau.com/app/profile/moinul
    virtualenv --no-site-packages venv
    source venv/bin/activate
    ```
-3. Install dependencies
+   or,
+   ```bash
+   python -m venv venv
+   ./venv/Scripts/activate
+   ```
+4. Install dependencies
    ```bash
    pip install -r requirements.txt
    ```
-4. Download Chromedriver from [here](https://chromedriver.chromium.org/downloads) <br/>
+5. Download Chromedriver from [here](https://chromedriver.chromium.org/downloads) <br/>
 4. Apply filter regarding your need and then see how many results are found.
 5. Update num_clicks, range of row_index according to the number of results found.
    ```bash
@@ -59,12 +75,12 @@ You can visit the dashboard [here](https://public.tableau.com/app/profile/moinul
    ```
 4. Run the Scraper
    ```bash
-   python Web_scraping_FIDE/scrape.py --chromedriver_path <path_to_chromedriver>
+   python web_scraping_FIDE/scrape.py --chromedriver_path <path_to_chromedriver>
    ```
 5. Within 20 seconds,Interact with the website to filter them similarly after the browser opens.
    You can change the time by updating
    ```bash
    time.sleep(your desired time)
    ```
-6. The data will be stored in a csv file named 'Active Candidate Masters.csv'. Change the name at your wish.
+6. The data will be stored in a csv file named 'active_candidate_masters.csv'. Change the name at your wish.
 7. You can concatenate the csv files into a single csv file using jupyter notebook as I did [here](https://github.com/moinul-hossain-dhrubo/FIDE_Ratings_Analysis/blob/main/Web_scraping_FIDE/data_process.ipynb) . <br/>
