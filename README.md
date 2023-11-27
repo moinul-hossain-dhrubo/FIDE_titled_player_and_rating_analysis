@@ -1,4 +1,4 @@
-# FIDE_Ratings_Analysis
+# FIDE_player_and_rating_analysis
 
 ### Problem Statement:
 The objective of this project was to compile information on Grandmasters, International Masters, and Candidate Masters who presently hold ratings with FIDE and also actively compete in tournaments. To do that we needed information from [this website](https://ratings.fide.com/) . We collected the data using selenium library. You can find the code [here](https://github.com/moinul-hossain-dhrubo/FIDE_Ratings_Analysis/blob/main/web_scraping_FIDE/scrape.py).
